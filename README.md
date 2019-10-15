@@ -18,7 +18,7 @@ React frontend.
 
 ## General info
 
-* Uploads an image file from the React frontend. This file is fetched by the backend using express.js.
+* Uploads an image file from the React frontend. This file is fetched by the backend using express.jsm and stored in a files directory in the public folder.
 
 * The frontend uses a [FormData object](https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData) with inputs for the file itself and a file name. The image will be displayed on the frontend.
 
@@ -28,25 +28,27 @@ React frontend.
 
 ## Technologies
 
-* [Node.js v10.15.3](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
+* [Node.js v12.3.1](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
 
-* [React v16.8.6](https://reactjs.org/) Frontend javascript library.
+* [React v16.10.2](https://reactjs.org/) Frontend javascript library.
 
 ## Frontend Setup
 
-### `npm start`
+### `npm run start`
 
-* Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view in browser.
+* Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view in browser.
 
 * The page will reload if you make edits. You will also see any lint errors in the console.
 
 ## Backend Setup
 
-* to follow after backend checked
+### `nodemon app.js`
+
+* Runs the backend in development mode. Open [http://localhost:8000](http://localhost:3000) to view in browser.
 
 ## Code Examples
 
-* extract of Frontend `Main.jsx` that handles the file upload.
+* extract of Frontend `Main.js` that handles the file upload.
 
 ```javascript
   // function to upload an image. FormData() constructor used to create a new FormData object.  
@@ -72,14 +74,16 @@ React frontend.
 
 ## Status & To-Do List
 
-* Status: working front-end.  back-end needs to be checked.
+* Status: updated oct 2019. working front-end. When running back-end gives a 404 error message 'file not found'.
 
-*To do: check backend.
+* To do: check backend code.
 
 ## Inspiration
 
-* [Medium article by Antonio Erdeljac: File upload with Node & React](https://levelup.gitconnected.com/file-upload-with-node-js-react-js-686e342ad7e7)
+* [Medium article by Antonio Erdeljac, jan 2018: File upload with Node & React](https://levelup.gitconnected.com/file-upload-with-node-js-react-js-686e342ad7e7)
+
+* [Signet article (original) by Antonio Erdeljac: File upload with Node & React](https://www.signet.hr/file-upload-with-node-react/)
 
 ## Contact
 
-Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
